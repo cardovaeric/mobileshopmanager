@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/asd">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="500"
+        android:id="@+id/dialog_lbl_currentStock"
+        android:layout_alignTop="@+id/dialog_lbl1"
+        android:layout_alignEnd="@+id/dialog_lbl_totalprice"
+        android:textColor="#ff535353" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IDR 0"
+        android:id="@+id/dialog_lbl_price"
+        android:layout_alignTop="@+id/dialog_lbl2"
+        android:layout_alignEnd="@+id/dialog_lbl_totalprice"
+        android:textColor="#ff555555" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IDR 0"
+        android:id="@+id/dialog_lbl_totalprice"
+
+        android:layout_alignTop="@+id/dialog_lbl3"
+        android:layout_alignEnd="@+id/dialog_txtQuantity"
+        android:textColor="#ff545454" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/dialog_txtQuantity"
+        android:hint="Input quantity"
+
+        android:layout_below="@+id/dialog_lbl_totalprice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:maxLength="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_txtQuantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/dialog_btn_cancel"
+            android:layout_alignTop="@+id/dialog_btn_sell"
+            android:layout_toRightOf="@+id/dialog_btn_sell"
+            android:layout_toEndOf="@+id/dialog_btn_sell"
+            android:layout_weight="1"
+            android:background="#ffda531f"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SELL"
+            android:id="@+id/dialog_btn_sell"
+            android:onClick="onClick"
+            android:layout_below="@+id/dialog_txtQuantity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#ffe35620"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Current stock"
+        android:id="@+id/dialog_lbl1"
+        android:layout_below="@+id/separator"
+        android:layout_alignStart="@+id/dialog_lbl3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Sell price / item"
+        android:id="@+id/dialog_lbl2"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/dialog_lbl1"
+        android:layout_alignStart="@+id/dialog_lbl1"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Total price"
+        android:id="@+id/dialog_lbl3"
+        android:layout_below="@+id/dialog_lbl2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NAME"
+        android:id="@+id/dialog_lbl_name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:layout_margin="15dp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ff868686"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/separator"
+        android:layout_below="@+id/dialog_lbl_name"
+        android:layout_marginBottom="10dp"></FrameLayout>
+</RelativeLayout>

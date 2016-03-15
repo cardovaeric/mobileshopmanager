@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ERASE ALL AND"
+        android:id="@+id/report_lbl_erase"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BLANK SALES REPORT"
+        android:id="@+id/report_lbl_blank"
+        android:textAlignment="center"
+        android:layout_below="@+id/report_lbl_erase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="*cannot be recovered"
+        android:id="@+id/report_lbl_sure"
+        android:layout_below="@+id/report_lbl_blank"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/linearLayout10"
+        android:layout_below="@+id/report_lbl_sure"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/report_cancel"
+            android:layout_alignTop="@+id/report_erase"
+            android:layout_toRightOf="@+id/report_erase"
+            android:layout_toEndOf="@+id/report_erase"
+            android:layout_weight="1"
+            android:background="#ffda531f"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ERASE"
+            android:id="@+id/report_erase"
+            android:onClick="onClick"
+            android:layout_below="@+id/dialog_txtQuantity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#ffe35620"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.cardova.sellmanager.AddActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/txt_productName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Product Name"
+        android:maxLength="30"
+        android:autoText="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_purchasePrice"
+        android:layout_below="@+id/txt_productName"
+        android:layout_centerHorizontal="true"
+        android:hint="Purchase Price"
+        android:maxLength="9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_recSellPrice"
+        android:hint="Sell Price"
+        android:layout_below="@+id/txt_purchasePrice"
+        android:layout_centerHorizontal="true"
+        android:maxLength="9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_productStock"
+        android:hint="Stock"
+        android:layout_below="@+id/txt_recSellPrice"
+        android:layout_centerHorizontal="true"
+        android:maxLength="3"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_below="@+id/txt_productStock"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/btn_cancel"
+            android:layout_alignTop="@+id/erase_btn_erase"
+            android:layout_toRightOf="@+id/erase_btn_erase"
+            android:layout_toEndOf="@+id/erase_btn_erase"
+            android:layout_weight="1"
+            android:background="#ffda531f"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/btn_submit"
+            android:onClick="onClick"
+            android:layout_below="@+id/dialog_txtQuantity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#ffe35620"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

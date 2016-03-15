@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        tools:context="com.cardova.sellmanager.AddActivity"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/edit_name"
+            android:hint="Product Name"
+            android:maxLength="30"
+            android:autoText="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/edit_lbl_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_purchase"
+            android:hint="Purchase Price"
+            android:maxLength="9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/edit_lbl_purchase"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_sell"
+            android:hint="Sell Price"
+            android:maxLength="9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/edit_lbl_sell"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_stock"
+            android:hint="Stock"
+            android:maxLength="3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/edit_lbl_stock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_below="@+id/edit_stock"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout9">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:id="@+id/edit_btn_cancel"
+                android:layout_alignTop="@+id/erase_btn_erase"
+                android:layout_toRightOf="@+id/erase_btn_erase"
+                android:layout_toEndOf="@+id/erase_btn_erase"
+                android:layout_weight="1"
+                android:background="#ffda531f"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="EDIT"
+                android:id="@+id/edit_btn_edit"
+                android:onClick="onClick"
+                android:layout_below="@+id/dialog_txtQuantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#ffe35620"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Product name"
+            android:id="@+id/edit_lbl_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Purchase price"
+            android:id="@+id/edit_lbl_purchase"
+            android:layout_below="@+id/edit_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sell price"
+            android:id="@+id/edit_lbl_sell"
+            android:layout_below="@+id/edit_purchase"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Stock"
+            android:id="@+id/edit_lbl_stock"
+            android:layout_below="@+id/edit_sell"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp" />
+    </RelativeLayout>
+</RelativeLayout>
